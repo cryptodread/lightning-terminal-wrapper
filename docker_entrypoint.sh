@@ -12,7 +12,7 @@ LITD_PASS=$(yq e '.password' /root/start9/config.yaml)
 RPC_TYPE=$(yq e '.bitcoind.type' /root/start9/config.yaml)
 RPC_USER=$(yq e '.bitcoind.user' /root/start9/config.yaml)
 RPC_PASS=$(yq e '.bitcoind.password' /root/start9/config.yaml)
-if [ "$bitcoind_type" = "internal-proxy" ]; then
+if [ "$RPC_TYPE" = "internal-proxy" ]; then
 	RPC_HOST="btc-rpc-proxy.embassy"
 	echo "Running on Bitcoin Proxy..."
 else
