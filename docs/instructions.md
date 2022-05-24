@@ -10,10 +10,12 @@
 > **Faraday(SSH Required):** Data Reporting tool developed by Lightning Labs to help you extract valuable analytics and insights from your LND node. Please note that Faraday is command line only, and not supported by EmbassyOS.
 
 **To use the Faraday command line interface (frcli) you will need to ssh into your Embassy:**
-```
-Usage: `docker exec lightning-terminal.embassy frcli --rpcserver=localhost:8443 "command"`
 
-For help finding more Faraday commands, type `docker exec lightning-terminal.embassy frcli --rpcserver=localhost:8443 -help`
-```
+Usage: 
+- `docker exec lightning-terminal.embassy frcli --rpcserver=localhost:8443 "command"`
+
+For help finding more Faraday commands, type 
+- `docker exec lightning-terminal.embassy frcli --rpcserver=localhost:8443 -help`
+
 
 ### You may also reference the [Walkthrough](https://docs.lightning.engineering/lightning-network-tools/lightning-terminal/get-lit) document for additional guidance on how to use the product.
